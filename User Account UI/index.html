@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Keka Task 2</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- main top nav bar with logo -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <a class="navbar-brand" href="#">
+      <h2 class="display-6 text-success"><strong>LOGO</strong></h2>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">
+            <i class="fas fa-user-cog text-muted user"></i> User Settings <i class="fas text-muted fa-angle-right user"></i> <i class="fas fa-user-tag text-muted user"></i> Roles
+            <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link h10" href="#"><small class="disabled-nav">Create/Update Role</small></a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        <i class="far fa-lg fa-bookmark icons-spaceing"></i>
+        &nbsp;&nbsp;
+        <img src="images/bell.png" alt="">
+        &nbsp;&nbsp;
+        <img src="images/profile.png" alt="">
+        &nbsp;&nbsp;
+        <span class="disabled-nav icons-spaceing"> <i class="fas fa-lg fa-sign-out-alt"></i> Logout</span>
+      </span>
+    </div>
+  </nav>
+  <div id="parent-container">
+
+    <!-- Left Side nav bar -->
+    <div class="Sidenav">
+      <div class="icon-container">
+        <i class="fa-lg fas fa-bars"></i>
+      </div>
+      <br>
+      <div class="icon-container">
+        <i class="fa-lg fas fa-home"></i>
+      </div>
+      <br>
+      <div class="icon-container">
+        <i class="fa-lg fas fa-inbox"></i>
+      </div>
+      <br>
+      <div class="icon-container">
+        <i class="fa-lg fas fa-file-invoice-dollar"></i>
+      </div>
+      <br>
+      <div class="icon-container">
+        <i class="fa-lg fas fa-tools"></i>
+      </div>
+      <br>
+      <div class="icon-container">
+        <i class="fa-lg far fa-chart-bar"></i>
+      </div>
+      <br>
+      <div class="icon-container icon-selected">
+        <i class="fa-lg fas fa-user-cog"></i>
+      </div>
+      <div class="version text-muted">
+        v0.0.1
+      </div>
+
+
+    </div>
+
+
+    <div class="Left-div border">
+      <br>
+      <i class="fas fa-search border search-color"><input size="50" class="Search-input" type="text" name="" placeholder="Search by name" value=""></i>
+      <button class="circular-button" type="button" name="button">+</button>
+
+      <!-- Name Description Action table -->
+      <br>
+      <br>
+      <div class="table-div">
+        <table class="table bg-white">
+          <tr class="table-header">
+            <td class="border text-left"><i class="far fa-square"></i></td>
+            <td class="h6 border text-dark text-left">Name <i class="fas fa-ellipsis-v option-align"></i></td>
+            <td class="h6 border text-dark text-left">Description <i class="fas fa-ellipsis-v option-align"></i></td>
+            <td class="h6 border text-dark text-left">Action</td>
+          </tr>
+          <tr class="selected-row">
+
+            <td class="border text-left">
+              <div class="custom-control form-control-lg custom-checkbox">
+                <input type="checkbox" checked="true" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1"></label>
+              </div>
+            </td>
+            <td class="h6 border text-muted text-left">Admin</td>
+            <td class="h6 border text-muted text-left">Role for Administrators</td>
+            <td class="h6 border"><i class="fas pencil-border fa-pencil-alt icon-border"></i><i class="far fa-times-circle cross-border"></i></td>
+          </tr>
+          <tr>
+            <td class="border text-left">
+              <div class="custom-control form-control-lg custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                <label class="custom-control-label" for="customCheck2"></label>
+              </div>
+            </td>
+            <td class="h6 border text-muted text-left">Dummy Role</td>
+            <td class="h6 border text-muted text-left">Dummy Role</td>
+            <td class="h6 border"><i class="fas pencil-border  fa-pencil-alt icon-border"></i><i class="far fa-times-circle cross-border"></i></td>
+          </tr>
+          <tr>
+            <td class="border text-left">
+              <div class="custom-control form-control-lg custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck3">
+                <label class="custom-control-label" for="customCheck3"></label>
+              </div>
+            </td>
+            <td class="h6 border text-muted text-left">Monitor</td>
+            <td class="h6 border text-muted text-left">Test</td>
+            <td class="h6 border"><i class="fas pencil-border  fa-pencil-alt icon-border"></i><i class="far fa-times-circle cross-border"></i></td>
+          </tr>
+          <tr>
+            <td class="border text-left">
+              <div class="custom-control form-control-lg custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                <label class="custom-control-label" for="customCheck4"></label>
+              </div>
+            </td>
+            <td class="h6 border text-muted text-left">Audit</td>
+            <td class="h6 border text-muted text-left">Test</td>
+            <td class="h6 border"><i class="fas pencil-border  fa-pencil-alt icon-border"></i><i class="far fa-times-circle cross-border"></i></td>
+          <tr>
+            <td class="border text-left">
+              <div class="custom-control form-control-lg custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck5">
+                <label class="custom-control-label" for="customCheck5"></label>
+              </div>
+            </td>
+            <td class="h6 border text-muted text-left">No permission</td>
+            <td class="h6 border text-muted text-left">No permission</td>
+            <td class="h6 border"><i class="fas pencil-border  fa-pencil-alt icon-border"></i><i class="far fa-times-circle cross-border"></i></td>
+          </tr>
+        </table>
+      </div>
+
+        <!-- page counter -->
+      <span class="page-bar text-muted">
+        Total 8 rows &nbsp;&nbsp;
+        <label for="">Items per page:</label>
+        <select disabled class="page-number">
+          <option>10&nbsp;&nbsp;</option>
+        </select>
+
+        <i class="fas fa-step-backward icons-spaceing"></i>
+        <i class="fa-lg fas fa-caret-left icons-spaceing"></i>
+        <input class="page-number" size="3" disabled type="text" name="" value="1">
+        <span>/ &nbsp;1</span>
+        <i class="fa-lg fas fa-caret-right icons-spaceing"></i>
+        <i class="fas fa-step-forward icons-spaceing"></i>
+      </span>
+
+    </div>
+    <div class="Right-div border">
+      <br>
+      <div>
+        <!-- Name -->
+        <fieldset class="border p-2 w-100">
+          <legend class="w-auto h6 text-muted text-left">Name</legend>
+          <input class="Search-input Admin-input w-100" placeholder="Admin" />
+        </fieldset>
+
+        <br>
+        <!-- Description -->
+        <fieldset class="border p-2 w-100">
+          <legend class="w-auto h6 text-muted text-left">Description</legend>
+          <textarea class="Search-input Admin-input w-100" placeholder="Role of Administrators"></textarea>
+        </fieldset>
+      </div>
+
+      <br>
+      <!-- Permissions  -->
+      <div class="Permissions-container w-100">
+
+        <div class="card w-45">
+          <div class="card-header text-muted text-left">
+            Available Permissions
+          </div>
+          <div class="card-body">
+            <i class="fas fa-search border search-color"><input class="cardinput-size" type="text" name="" placeholder="Search Permission" value=""></i>
+            <ul class="Permission-list">
+              <li class="border">
+                <i class="gray-dots fa-sm fas fa-ellipsis-v"></i><i class="gray-dots fa-sm fas fa-ellipsis-v"></i>
+                Dashboard View
+                <span class="text-secondary h3">&nbsp; +</span>
+              </li>
+              <li class="border">
+                <i class="gray-dots fa-sm fas fa-ellipsis-v"></i><i class="gray-dots fa-sm fas fa-ellipsis-v"></i>
+                Dashboard Report View
+                <span class="text-secondary h3">&nbsp; +</span>
+              </li class="border">
+              <li class="border">
+                <i class="gray-dots fa-sm fas fa-ellipsis-v"></i><i class="gray-dots fa-sm fas fa-ellipsis-v"></i>
+                External Connector List View
+                <span class="text-secondary h3">&nbsp; +</span>
+              </li>
+              <li class="border">
+                <i class="gray-dots fa-sm fas fa-ellipsis-v"></i><i class="gray-dots fa-sm fas fa-ellipsis-v"></i>
+                Test Run List View
+                <span class="text-secondary h3">&nbsp; +</span>
+              </li>
+              <li class="border">
+                <i class="gray-dots fa-sm fas fa-ellipsis-v"></i><i class="gray-dots fa-sm fas fa-ellipsis-v"></i>
+                Test Run Summary
+                <span class="text-secondary h3">&nbsp; +</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card w-50">
+          <div class="card-header text-muted text-left">
+            Assigned Permissions
+          </div>
+          <div class="card-body">
+            <i class="fas fa-search border search-color"><input class="cardinput-size" type="text" name="" placeholder="Search Permission" value=""></i>
+            <ul class="Permission-list">
+              <li class="border">
+                Result Object View
+                &nbsp; <i class="far text-secondary fa-times-circle"></i>
+              </li>
+              <li class="border">
+                Workflow List View
+                &nbsp; <i class="far text-secondary fa-times-circle"></i>
+              </li>
+              <li class="border">
+                Workflow Create
+                &nbsp; <i class="far text-secondary fa-times-circle"></i>
+              </li>
+              <li class="border">
+                Workflow Update
+                &nbsp; <i class="far text-secondary fa-times-circle"></i>
+              </li>
+              <li class="border">
+                Workflow View
+                &nbsp; <i class="far text-secondary fa-times-circle"></i>
+              </li>
+              <li class="border">
+                Regulations Create
+                &nbsp; <i class="far text-secondary fa-times-circle"></i>
+              </li>
+              <li class="border">
+                Regulations Create
+                &nbsp; <i class="far text-secondary fa-times-circle"></i>
+              </li>
+              <li class="border">
+                Regulations Create
+                &nbsp; <i class="far text-secondary gray-dots fa-times-circle"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br>
+      <!-- Buttons -->
+      <button type="button" class="btn btn-sm option-align btn-success">SAVE</button>
+      <button type="button" class="btn btn-sm option-align border btn-light">CANCEL</button>
+    </div>
+  </div>
+</body>
+</html>
